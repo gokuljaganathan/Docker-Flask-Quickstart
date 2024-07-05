@@ -1,0 +1,5 @@
+docker image build -t flask-test ./flask_sample
+docker images
+docker run flask-test --> It will run but not work in public env because it is only accessible inside the docker container
+docker run -d -p 5000:5000 flask-test --> to work in public we can run in the detach mode like to call the docker usng
+5000 port from outside.
